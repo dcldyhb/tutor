@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  23 JUL 2025 12:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  23 JUL 2025 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,24 +602,35 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Warning: No \author given.
 
 
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 65.
+
+
 
 [1
 
-] (./20250724.aux)
+]
+
+[2] (./20250724.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
 Package rerunfilecheck Info: File `20250724.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17324 strings out of 473832
- 371507 string characters out of 5729481
- 778148 words of memory out of 5000000
- 40167 multiletter control sequences out of 15000+600000
- 564401 words of font info for 70 fonts, out of 8000000 for 9000
+ 17390 strings out of 473832
+ 374222 string characters out of 5729481
+ 787160 words of memory out of 5000000
+ 40220 multiletter control sequences out of 15000+600000
+ 566067 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,6n,114p,609b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,6n,114p,609b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 20250724.pdf (1 page).
+Output written on 20250724.pdf (2 pages).
