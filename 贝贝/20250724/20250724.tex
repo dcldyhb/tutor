@@ -1,0 +1,61 @@
+\documentclass[a4paper , final]{ctexart}
+\pagestyle{plain}
+\everymath{\displaystyle} % 使所有数学公式默认使用行间公式格式
+
+\usepackage{amsmath}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{ifplatform}
+\ifwindows
+  \setCJKmainfont{SimSun} % 注意：请确保您的系统中已安装宋体 (SimSun) 字体
+\else
+  \ifmacosx
+    \setCJKmainfont{Songti SC} % macOS 上的宋体字体
+\fi
+\fi
+%\usepackage{bookmark}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{enumitem} % 用于自定义列表
+
+% --- 标题格式设置 ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\graphicspath{{figures/}} % 图片路径
+
+% --- 核心修改：定义并统一题目环境 ---
+\newlist{problems}{enumerate}{1}
+\setlist[problems,1]{label=\arabic*., leftmargin=*}
+
+% 环境1：常规题目 (不含图片)
+% 使用 \newenvironment 定义新的环境
+\newenvironment{problem}[1]{%
+  \item #1
+  \par
+  \vspace{8cm}
+}{}
+
+% 环境2：带图片的题目 (已升级)
+% #1 (可选): 图片底部距离, 默认 2cm
+% #2: 题目文本
+% #3: 图片命令
+\newenvironment{problemwithfig}[3][2cm]{%
+  \item #2
+  \par\noindent
+  \begin{minipage}[t][8cm][b]{\linewidth}
+    \vfill
+    \hfill #3
+    \par\vspace{#1} % 图片底部的间距由 #1 控制
+  \end{minipage}
+}{}
+% ---------------------------
+
+\title{模版}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\end{document}
