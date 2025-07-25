@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.6)  25 JUL 2025 10:09
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.6)  25 JUL 2025 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Documents/tutor/贝贝/template/template
-(c:/Documents/tutor/贝贝/template/template.tex
+**c:/Documents/tutor/贝贝/20250725/20250725
+(c:/Documents/tutor/贝贝/20250725/20250725.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
 (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (c:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -615,8 +615,8 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 )
 \c@problemsi=\count345
 \enitdp@problems=\count346
- (./template.aux)
-\openout1 = `template.aux'.
+ (./20250725.aux)
+\openout1 = `20250725.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -731,9 +731,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 58.
-(./template.out) (./template.out)
+(./20250725.out) (./20250725.out)
 \@outlinefile=\write3
-\openout3 = `template.out'.
+\openout3 = `20250725.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -742,24 +742,60 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Warning: No \author given.
 
 
+LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined
+(Font)              using `TU/SimSun(1)/m/n' instead on input line 61.
+
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 67.
+
+
 
 [1
 
-] (./template.aux)
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11] (./20250725.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-Package rerunfilecheck Info: File `template.out' has not changed.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `20250725.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17285 strings out of 468529
- 368318 string characters out of 5451400
- 784058 words of memory out of 5000000
- 45437 multiletter control sequences out of 15000+600000
- 632389 words of font info for 74 fonts, out of 8000000 for 9000
+ 17373 strings out of 468529
+ 372559 string characters out of 5451400
+ 789070 words of memory out of 5000000
+ 45512 multiletter control sequences out of 15000+600000
+ 634055 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,6n,111p,597b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,6n,111p,597b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (1 page).
+Output written on 20250725.pdf (11 pages).

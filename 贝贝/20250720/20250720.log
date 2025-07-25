@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.6)  21 JUL 2025 17:56
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.6)  25 JUL 2025 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/YanFang/Desktop/讲义/贝贝/20250720/20250720
-(c:/Users/YanFang/Desktop/讲义/贝贝/20250720/20250720.tex
+**c:/Documents/tutor/贝贝/20250720/20250720
+(c:/Documents/tutor/贝贝/20250720/20250720.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
 (c:/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (c:/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -771,11 +771,11 @@ Package rerunfilecheck Info: File `20250720.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  17234 strings out of 468529
- 368778 string characters out of 5451400
+ 368751 string characters out of 5451400
  794398 words of memory out of 5000000
  45386 multiletter control sequences out of 15000+600000
  634071 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,10n,111p,606b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,10n,111p,597b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 20250720.pdf (5 pages).

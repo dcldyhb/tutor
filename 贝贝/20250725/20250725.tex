@@ -1,0 +1,268 @@
+\documentclass[a4paper , final]{ctexart}
+\pagestyle{plain}
+\everymath{\displaystyle} % 使所有数学公式默认使用行间公式格式
+
+\usepackage{amsmath}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{ifplatform}
+\ifwindows
+  \setCJKmainfont{SimSun} % 注意：请确保您的系统中已安装宋体 (SimSun) 字体
+\else
+  \ifmacosx
+    \setCJKmainfont{Songti SC} % macOS 上的宋体字体
+\fi
+\fi
+%\usepackage{bookmark}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{enumitem} % 用于自定义列表
+
+% --- 标题格式设置 ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\graphicspath{{figures/}} % 图片路径
+
+% --- 核心修改：定义并统一题目环境 ---
+\newlist{problems}{enumerate}{1}
+\setlist[problems,1]{label=\arabic*., leftmargin=*}
+
+% 环境1：常规题目 (不含图片)
+% 使用 \newenvironment 定义新的环境
+\newenvironment{problem}[1]{%
+  \item #1
+  \par
+  \vspace{8cm}
+}{}
+
+% 环境2：带图片的题目 (已升级)
+% #1 (可选): 图片底部距离, 默认 2cm
+% #2: 题目文本
+% #3: 图片命令
+\newenvironment{problemwithfig}[3][2cm]{%
+  \item #2
+  \par\noindent
+  \begin{minipage}[t][8cm][b]{\linewidth}
+    \vfill
+    \hfill #3
+    \par\vspace{#1} % 图片底部的间距由 #1 控制
+  \end{minipage}
+}{}
+% ---------------------------
+
+\title{不等式}
+\date{2025年7月25日}
+
+\begin{document}
+\maketitle
+
+\section*{不等式的性质}
+
+\begin{problems}
+  \begin{problem}
+  {
+  设 $a>b>c>d>0$，且 $x=\sqrt{ab}+\sqrt{cd},y=\sqrt{ac}+\sqrt{bd},z=\sqrt{ad}+\sqrt{bc}$，则 $x,y,z$ 的大小关系为\underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  使不等式 $\sqrt{3}+\sqrt{8}>1+\sqrt{a}$ 成立的正整数 $a$ 的最大值为\underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知二次函数 $f(x)$ 的图像过原点，且 $1 \le f(-2) \le 2$，$3 \le f(1) \le 4$，求 $f(2)$ 的范围.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  判断 $x^2+y^2$ 与 $xy+x+y+1$ 的大小.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知 $a,b,c,d > 0$, $A = a+d$, $B = b+c$, 且 $\frac{a}{b} = \frac{c}{d}$. 若 $a$ 是 $a,b,c,d$ 中最大的一个, 试比较 $A$ 与 $B$ 的大小.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $0 < a < \frac{1}{2}$.则 $1-a^2$, $1+a^2$, $\frac{1}{1-a^2}$, $\frac{1}{1+a^2}$ 按从小到大的顺序排列为 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $a,b,c \in \mathbf{R}$.则 “$a>0, b>0, c>0$” 是 “$a+b+c > 0, ab+bc+ca > 0, abc > 0$” 成立的 \underline{\hspace{3cm}} 条件.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  若 $0 < b < a < \frac{1}{4}$.则 $a-b, \sqrt{a}-\sqrt{b}, \sqrt{a-b}, \sqrt{a^2-b^2}$ 中最大的是 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设对于 $k=1, 2, \dots, n$, 存在实数 $x$ 满足如下不等式: $2^k < x^k + x^{k+1} < 2^{k+1}$.试求 $n$ 的最大值.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $f(x) = x^8 - x^5 + x^2 - x + 1$.证明：对任意实数 $x$, $f(x)$ 总大于 $0$.
+  }
+  \end{problem}
+
+\end{problems}
+
+\section*{不等式的证明}
+
+\begin{problems}
+  \begin{problem}
+  {
+  设 $\triangle ABC$ 的三条边分别为 $a,b,c$，试证明 $ab+bc+ac\ge \frac{1}{2}(a+b+c)^2$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知 $a > 0, b > 0$, 且 $a+b=1$.证明：$\left(a + \frac{1}{a}\right)\left(b + \frac{1}{b}\right) \ge \frac{25}{4}$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设正实数 $a, b$ 满足 $a+b=1$.证明：$\sqrt{a^2 + \frac{1}{a}} + \sqrt{b^2 + \frac{1}{b}} \ge 3$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知 $x, y, z \in \mathbf{R}^+$.证明：$\frac{1+xy+xz}{(1+y+z)^2} + \frac{1+yz+yx}{(1+z+x)^2} + \frac{1+zx+zy}{(1+x+y)^2} \geq 1$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知 $n$ 是正整数.证明：$\frac{1}{\sqrt{1^3}} + \frac{1}{\sqrt{2^3}} + \frac{1}{\sqrt{3^3}} + \cdots + \frac{1}{\sqrt{n^3}} < 3$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知 $u \in [-\sqrt{2}, \sqrt{2}]$, $v \in \mathbf{R}^+$.证明：$(u-v)^2 + \left(\sqrt{2-u^2} - \frac{9}{v}\right)^2 \ge 8$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  若 $a,b,c$ 是符号相同的三个实数, 且 $a < b < c$, 令 $S = a^3(b^2-c^2) + b^3(c^2-a^2) + c^3(a^2-b^2)$.则 $S$ 与 $0$ 的大小关系是 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $a,b$ 都是正数, 且 $a+b \le 4$.则 $\frac{1}{a} + \frac{1}{b}$ 与 $1$ 的大小关系是 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $x, y, z \in \mathbf{R}$，在 $\triangle ABC$ 中.证明：$x^2 + y^2 + z^2 \ge 2xy\cos C + 2yz\cos A + 2zx\cos B$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知非负实数 $a, b, c$ 满足 $ab+bc+ca=1$.证明：$\frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} \ge \frac{5}{2}$.
+  }
+  \end{problem}
+
+\end{problems}
+
+\newpage
+\section*{不等式的解法}
+
+\begin{problems}
+
+  \begin{problem}
+  {
+  解不等式：$\sqrt{x + \frac{1}{x^2}} - \sqrt{x - \frac{1}{x^2}} < \frac{1}{x}$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  解不等式 $(x^2 - 1) \cdot \sqrt{x^2 + 1} < x \cdot (x^2 + 1)$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  设 $a$ 为实常数, 关于 $x$ 的不等式 $\frac{1}{1+\sqrt{x}} \ge a\sqrt{\frac{x}{x-1}}$ 有非零解.求实数 $a$ 的取值范围.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  解不等式 $\left| \log_2 x + \frac{2}{\sqrt{\log_2 x + 4}} \right| \ge 1$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  解关于 $x$ 的不等式 $2^{3x} - 2^{-3x} > \lambda(2^x - 2^{-x})$.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知不等式 $|x^2 - 4x + a| + |x - 3| \le 5$ 的解的最大值为 $3$.求实数 $a$ 的值，并解此不等式.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  已知不等式 $x^4 + ax^3 + (a+3)x^2 + ax + 1 > 0$ 对一切实数 $x$ 恒成立，求实数 $a$ 的取值范围.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  不等式 $|x + \log_2 x| < x + |\log_2 x|$ 的解集为 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+  若 $\sqrt{3-a}-\sqrt{a+1}\le 0$ 恒成立，则实数 $a$ 的取值范围为 \underline{\hspace{3cm}}.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {
+    设 $a,b,x \in \mathbf{N}^+$, 且 $a \le b$. $A$ 为关于 $x$ 的不等式 $\lg b - \lg a < \lg x < \lg b + \lg a$ 的解集. 已知 $A$ 中恰好有 $50$ 个整数解, 且 $\frac{1}{a} + \frac{1}{b} \ge \frac{1}{50}$.求当 $ab$ 取最大值时, $\sqrt{a+b}$ 的值.
+  }
+\end{problem}
+
+\end{problems}
+
+% \section*{不等式的应用}
+% 
+%\begin{problems}
+%  \begin{problem}
+%  {
+%  $x_1$ 与 $x_2$ 分别是实系数一元二次方程 $ax^2 + bx + c = 0$ 和 $-ax^2 + bx + c = 0$ 的一个根, 且 $x_1 \ne x_2, x_1 \ne 0, x_2 \ne 0$.`证明：方程 $\frac{a}{2}x^2 + bx + c = 0$ 有且仅有一个根介于 $x_1$ 与 $x_2$ 之间.
+%  }
+%  \end{problem}
+%\end{problems}
+
+\end{document}
