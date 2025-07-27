@@ -1,0 +1,93 @@
+\documentclass[a4paper , final]{ctexart}
+\pagestyle{plain}
+\everymath{\displaystyle} % 使所有数学公式默认使用行间公式格式
+
+\usepackage{amsmath}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{ifplatform}
+\ifwindows
+  \setCJKmainfont{SimSun} % 注意：请确保您的系统中已安装宋体 (SimSun) 字体
+\else
+  \ifmacosx
+    \setCJKmainfont{Songti SC} % macOS 上的宋体字体
+\fi
+\fi
+%\usepackage{bookmark}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\usepackage{enumitem} % 用于自定义列表
+
+% --- 标题格式设置 ---
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\graphicspath{{figures/}} % 图片路径
+
+% --- 核心修改：定义并统一题目环境 ---
+\newlist{problems}{enumerate}{1}
+\setlist[problems,1]{label=\arabic*., leftmargin=*}
+
+% 环境1：常规题目 (不含图片)
+% 使用 \newenvironment 定义新的环境
+\newenvironment{problem}[1]{%
+  \item #1
+  \par
+  \vspace{8cm}
+}{}
+
+% 环境2：带图片的题目 (已升级)
+% #1 (可选): 图片底部距离, 默认 2cm
+% #2: 题目文本
+% #3: 图片命令
+\newenvironment{problemwithfig}[3][2cm]{%
+  \item #2
+  \par\noindent
+  \begin{minipage}[t][8cm][b]{\linewidth}
+    \vfill
+    \hfill #3
+    \par\vspace{#1} % 图片底部的间距由 #1 控制
+  \end{minipage}
+}{}
+% ---------------------------
+
+\title{不等式综合 II}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+
+\section*{不等式的应用}
+ 
+\begin{problems}
+  \begin{problem}
+  {(根的存在性定理)
+  $x_1$ 与 $x_2$ 分别是实系数一元二次方程 $ax^2 + bx + c = 0$ 和 $-ax^2 + bx + c = 0$ 的一个根, 且 $x_1 \ne x_2, x_1 \ne 0, x_2 \ne 0$.证明：方程 $\frac{a}{2}x^2 + bx + c = 0$ 有且仅有一个根介于 $x_1$ 与 $x_2$ 之间.
+  }
+  \end{problem}
+
+  \begin{problem}
+  {(和差化积、均值不等式)
+  已知 $x, y > 0$, 求函数 $f(x,y) = \sin x + \sin y - \sin(x+y)$ 的最大值.
+  }
+  \end{problem}
+
+  \begin{problem}
+    {(以函数值表示系数)
+      设正系数一元二次方程 $ax^2 + bx + c = 0$ 有实根,证明: $\min\{a,b,c\}\leq\frac{1}{4}(a+b+c)$.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(绝对值不等式)
+      设函数 $f(x) = x^2+ax+b(a,b\in\mathbf{R})$. 计 $M(a,b)$ 为 $\vert f(x)\vert$ 在区间 $[-1,1]$ 上的最大值.
+      \begin{enumerate}[label=(\arabic*)]
+        \item 证明: 当 $\vert a\vert\ge 2$ 时, $M(a,b) \geq 2$.
+        \item 当 $a,b$ 满足 $M(a,b)\leq 2$ 时, 求 $\vert a\vert + \vert b\vert$ 的最大值.
+      \end{enumerate} 
+    }
+  \end{problem}
+\end{problems}
+\end{document}

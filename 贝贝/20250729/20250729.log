@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  27 JUL 2025 13:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  27 JUL 2025 14:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/fangyan/Documents/tutor/贝贝/20250725/20250725
-(/Users/fangyan/Documents/tutor/贝贝/20250725/20250725.tex
+**/Users/fangyan/Documents/tutor/贝贝/20250729/20250729
+(/Users/fangyan/Documents/tutor/贝贝/20250729/20250729.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -180,58 +180,51 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Could not ex-fontset-mac.def 2022/07/14 v2.5.10 macOS fonts definition (CTEX)
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.
-def
-File: ctex-fontset-macold.def 2022/07/14 v2.5.10 macOS fonts definition for Yos
-emite or earlier version (CTEX)
+(fontspec)             Could not resolve font "STHeiti/I" (it probably doesn't
+(fontspec)             exist).
 
 
-/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.d
-ef:44: Critical Class ctexart Error: CTeX fontset `mac' is unavailable in curre
-nt
-(ctexart)                       mode.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.44   }
-        
-? <ret>[s]
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-1 or ... or 9 to ignore the next 1 to 9 tokens of input,
-H for help, X to quit.
-? 
-/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.d
-ef:44: Emergency stop.
- ...                                              
-                                                  
-l.44   }
-        
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-Reading the current file 'ctex-fontset-macold' will stop.
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STSong/BI" (it probably doesn't
+(fontspec)             exist).
 
 
- 
-Here is how much of TeX's memory you used:
- 4265 strings out of 473190
- 91961 string characters out of 5715800
- 499920 words of memory out of 5000000
- 27508 multiletter control sequences out of 15000+600000
- 561088 words of font info for 41 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 80i,0n,83p,710b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
-/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-macold.d
-ef:44:  ==> Fatal error occurred, no output PDF file produced!
-eX Info: Redefining \frac on input line 233.
+Package fontspec Info: 
+(fontspec)             Font family 'STSong(0)' created for font 'STSong' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={STHeiti},ItalicFont={STKaiti}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STSong/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"STHeiti/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"STKaiti/OT:script=hani;language=dflt;"
+
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen175
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen176
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count297
+LaTeX Info: Redefining \frac on input line 233.
 \uproot@=\count298
 \leftroot@=\count299
 LaTeX Info: Redefining \overline on input line 398.
@@ -482,8 +475,8 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 )
 \c@problemsi=\count332
 \enitdp@problems=\count333
- (./20250725.aux)
-\openout1 = `20250725.aux'.
+ (./20250729.aux)
+\openout1 = `20250729.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -598,9 +591,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 58.
-(./20250725.out) (./20250725.out)
+(./20250729.out) (./20250729.out)
 \@outlinefile=\write3
-\openout3 = `20250725.out'.
+\openout3 = `20250729.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -610,7 +603,7 @@ LaTeX Warning: No \author given.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 67.
+(Font)              size <10.95> substituted on input line 68.
 
 
 
@@ -618,25 +611,7 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 
 ]
 
-[2]
-
-[3]
-
-[4]
-
-[5]
-
-[6]
-
-[7]
-
-[8]
-
-[9]
-
-[10]
-
-[11] (./20250725.aux)
+[2] (./20250729.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
@@ -646,16 +621,16 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-Package rerunfilecheck Info: File `20250725.out' has not changed.
+Package rerunfilecheck Info: File `20250729.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17410 strings out of 473832
- 375708 string characters out of 5729481
- 783160 words of memory out of 5000000
- 40240 multiletter control sequences out of 15000+600000
+ 17391 strings out of 473832
+ 374250 string characters out of 5729481
+ 784154 words of memory out of 5000000
+ 40221 multiletter control sequences out of 15000+600000
  566067 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,6n,114p,609b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,6n,114p,609b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 20250725.pdf (11 pages).
+Output written on 20250729.pdf (2 pages).
