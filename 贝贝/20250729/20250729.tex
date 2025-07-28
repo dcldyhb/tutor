@@ -170,7 +170,7 @@
 
 \subsection*{琴生不等式}
 
-设 $f(x)$ 是一个在区间 $I$ 上连续的函数,若对任意的 $x_1,x_2\in I$, 有不等式 $f(x_1) + f(x_2) \geq 2f\left(\frac{x_1+x_2}{2}\right)$ 成立,则称 $f(x)$ 是一个上凸函数.
+设 $f(x)$ 是一个在区间 $I$ 上连续的函数,若对任意的 $x_1,x_2\in I$, 有不等式 $f(x_1) + f(x_2) \geq 2f\left(\frac{x_1+x_2}{2}\right)$ 成立(或 $f(x)$ 存在二阶导数且 $f''(x)<0$),则称 $f(x)$ 是一个上凸函数.
 
 若函数 $f(x)$ 为区间 $I$ 上的上凸函数,则对任意的 $x_1,x_2,\ldots,x_n\in I$, 有:
 
@@ -194,6 +194,12 @@
   \end{problem}
 
   \begin{problem}
+    {
+      设 $x,y,z\in\mathbf{R}^+$, 且 $x+y+z\ge xyz$, 求 $\frac{x^2+y^2+z^2}{xyz}$ 的最小值.
+    }
+  \end{problem}
+
+  \begin{problem}
     {(均值不等式)
       证明: $\left(1+\frac{1}{n}\right)^n < \left(1+\frac{1}{n+1}\right)^{n+1}$.
     }
@@ -206,6 +212,24 @@
   \end{problem}
 
   \begin{problem}
+    {
+      求最小的正实数 $k$, 使得不等式 $ab+bc+ca+k\left(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}\right)\geq 9$ 对任意正实数 $a,b,c$ 成立.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      已知 $a,b,c\in \mathbf{R}^+$, 且 $abc=1$, 则 $\frac{1}{a^3(b+c)}+\frac{1}{b^3(c+a)}+\frac{1}{c^3(a+b)}$ 的最小值为\underline{\hspace{3cm}}.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      设 $a,b,c\ge 0$, 且 $a^2+b^2+c^2=3$, 则 $a\sqrt{b}+b\sqrt{c}+c\sqrt{a}$ 的最大值为 \underline{\hspace{3cm}}.
+    }
+  \end{problem}
+
+  \begin{problem}
     {(Cauchy 不等式)
       求出所有实数 $a$ 使得存在非负实数 $x_1,x_2,x_3,x_4,x_5$ 满足下列关系: $\sum_{k=1}^5 kx_k=a,\sum_{k=1}^5 k^3x_k =a^2,\sum_{k=1}^5 k^5x_k =a^3$.
     }
@@ -214,6 +238,42 @@
   \begin{problem}
     {(均值不等式)
       证明: $\sum_{k=0}^{n-1} \frac{1}{n+k}>n(\sqrt[n]{2}-1)$.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(排序不等式)
+      正实数 $a_1,a_2,\ldots,a_n$ 的任一排列为 ${a'}_1,{a'}_2\ldots {a'}_n$, 证明: $\frac{a_1}{{a'}_1}+\frac{a_2}{{a'}_2}+\cdots+\frac{a_n}{{a'}_n}\geq n$.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      设三角形的三条边长分别为 $a,b,c$, 求 $\frac{a+b+c}{\sqrt{ab+bc+ac}}$ 的取值范围.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      由排序不等式证明均值不等式.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(琴生不等式)
+      设 $x_1,x_2,\ldots,x_n(n\ge 2)$ 是正实数, 满足 $x_1+x_2+\ldots+x_n=1$, 求 $\frac{x_1}{1-x_1}+\frac{x_2}{1-x_2}+\cdots+\frac{x_n}{1-x_n}$ 的最小值.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(琴生不等式)
+      设三角形的三个内角分别为 $A,B,C$, 求 $\sin{\frac{A}{2}}+\sin{\frac{B}{2}}+\sin{\frac{C}{2}}$ 的最大值.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(琴生不等式,需要仔细挑选原函数)
+      设实数 $r_1,r_2,\ldots,r_n\ge 1$ ,证明 $\frac{1}{r_1+1}+\frac{1}{r_2+1}+\cdots+\frac{1}{r_n+1}\ge \frac{n}{\sqrt[n]{r_1r_2\cdots r_n}+1}$.
     }
   \end{problem}
 \end{problems}
