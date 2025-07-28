@@ -89,5 +89,133 @@
       \end{enumerate} 
     }
   \end{problem}
+
+  \newpage
+  \begin{problem}
+    {(基本不等式)
+      记 $F(x,y)=x+y-a(x+2\sqrt{2xy}),x,y\in\mathbf{R}^+$
+      \begin{enumerate}[label=(\arabic*)]
+        \item 是否存在 $x_0\in\mathbf{R}^+$,使 $F(x_0,2)=2$?
+        \item 若对任意的 $x,y\in\mathbf{R}^+$,都有 $F(x,y)\geq 0$, 求 $a$ 的取值范围.
+      \end{enumerate}
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(基本不等式,三角不等式)
+      已知正实数 $x,y$ 满足 $a=x+y,b=\sqrt{x^2+7xy+y^2}$.
+      \begin{enumerate}[label=(\arabic*)]
+        \item 当 $y=1$ 时,求 $\frac{b}{a}$ 的最大值;
+        \item 若 $c=kxy$ ,若对于任意的正数 $x,y$,以 $a,b,c$ 为长度的线段恒能构成三角形,求 $k$ 的取值范围.
+      \end{enumerate}
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      设 $f(x)=x^2-2ax+2$,当 $x\in[1,+\infty)$ 时, $f(x)\geq a$ 恒成立,则实数 $a$ 的取值范围是 \underline{\hspace{3cm}}.
+    }
+  \end{problem}
+
+  %\newpage
+  \begin{problem}
+    {
+      对于一切实数 $a$,二次函数 $f(x)=ax^2+bx+c(a<b)$ 的值恒为非负实数,求 $M=\frac{a+b+c}{b-a}$ 的最小值.   
+    }
+  \end{problem}
+  
+  \begin{problem}
+    {
+      大圆酒杯的轴截口为函数 $y=x^4$ 的图像,往酒杯里面放一半径为 $r$ 的小球,当半径 $r$ 最大为多少时,小球可接触到杯底的最低点?
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      设实数 $a,b,c,d$ 满足 $ab=c^2+d^2=1$, 则 $(a-c)^2+(b-d)^2$ 的最小值为 \underline{\hspace{3cm}}.
+    }
+  \end{problem}
 \end{problems}
+
+\section*{几个重要的不等式}
+
+\subsection*{平均值不等式}
+
+
+若 $a_i \ge 0,i=1,2,\ldots,n$, 计 $H_n =\frac{n}{\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}}$, $G_n = \sqrt[n]{a_1 a_2 \cdots a_n}$, $A_n = \frac{a_1+a_2+\cdots+a_n}{n}$，$Q_n = \sqrt{a_1^2+a_2^2+\cdots+a_n^2}$ 分别为这 $n$ 个数的调和平均、几何平均、算术平均和平方平均,则有:
+
+\begin{equation*}
+  H_n \leq G_n \leq A_n \leq Q_n
+\end{equation*}
+
+\subsection*{Cauchy 不等式}
+
+设 $a_1,a_2,\ldots,a_n,b_1,b_2,\ldots,b_n$ 是实数,则有
+
+\begin{equation*}
+  (a_1^2+a_2^2+\cdots+a_n^2)(b_1^2+b_2^2+\cdots+b_n^2) \geq (a_1b_1+a_2b_2+\cdots+a_nb_n)^2
+\end{equation*}
+
+当且仅当 $\frac{a_1}{b_1}=\frac{a_2}{b_2}=\cdots=\frac{a_n}{b_n}$ 时,等号成立.
+
+\subsection*{排序不等式}
+
+设两个实数列 $a_1 \leq a_2 \leq \cdots \leq a_n$ 和 $b_1 \leq b_2 \leq \cdots \leq b_n$, 则有
+
+\begin{equation*}
+  a_1b_1 + a_2b_2 + \cdots + a_nb_n\text{(顺序和)} \geq a_1b_{i_1} + a_2b_{i_2} + \cdots + a_nb_{i_n}\text{(乱序和)} \geq a_1b_n + a_2b_{n-1} + \cdots + a_nb_1\text{(逆序和)}
+\end{equation*}
+
+其中 $i_1,i_2,\ldots,i_n$ 是 $1,2,\ldots,n$ 的一个排列.
+
+\subsection*{琴生不等式}
+
+设 $f(x)$ 是一个在区间 $I$ 上连续的函数,若对任意的 $x_1,x_2\in I$, 有不等式 $f(x_1) + f(x_2) \geq 2f\left(\frac{x_1+x_2}{2}\right)$ 成立,则称 $f(x)$ 是一个上凸函数.
+
+若函数 $f(x)$ 为区间 $I$ 上的上凸函数,则对任意的 $x_1,x_2,\ldots,x_n\in I$, 有:
+
+\begin{equation*}
+  f(\frac{x_1+x_2+\cdots x_n}{n})\geq \frac{1}{n}(f(x_1)+f(x_2)+\cdots+f(x_n))
+\end{equation*}
+
+\subsection*{幂平均不等式}
+
+设 $p>q$, 则对任意的非负实数 $a_1,a_2,\ldots,a_n$ 有:
+
+\begin{equation*}
+  \left(\frac{a_1^p+a_2^p+\cdots+a_n^p}{n}\right)^{\frac{1}{p}} \geq \left(\frac{a_1^q+a_2^q+\cdots+a_n^q}{n}\right)^{\frac{1}{q}}
+\end{equation*}
+
+\begin{problems}
+  \begin{problem}
+    {(幂平均不等式或均值不等式)
+      已知 $x,y,z>0,x+y+z=1$,证明: $x^3+y^3+z^3\geq \frac{1}{3}$
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(均值不等式)
+      证明: $\left(1+\frac{1}{n}\right)^n < \left(1+\frac{1}{n+1}\right)^{n+1}$.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {
+      试求正实数 $A$ 的最大值,使得对于任意实数 $x,y,z$, 不等式 $x^4+y^4+z^4+x^2yz+xy^2z+xyz^2-A(xy+yz+xy)^2\ge 0$ 成立.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(Cauchy 不等式)
+      求出所有实数 $a$ 使得存在非负实数 $x_1,x_2,x_3,x_4,x_5$ 满足下列关系: $\sum_{k=1}^5 kx_k=a,\sum_{k=1}^5 k^3x_k =a^2,\sum_{k=1}^5 k^5x_k =a^3$.
+    }
+  \end{problem}
+
+  \begin{problem}
+    {(均值不等式)
+      证明: $\sum_{k=0}^{n-1} \frac{1}{n+k}>n(\sqrt[n]{2}-1)$.
+    }
+  \end{problem}
+\end{problems}
+
 \end{document}
