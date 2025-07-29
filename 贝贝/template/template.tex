@@ -58,4 +58,49 @@
 \begin{document}
 \maketitle
 
+\section*{使用说明}
+
+本模版提供两种题目环境供使用：
+
+\begin{enumerate}
+  \item \textbf{常规题目环境}：使用 \texttt{problem} 环境，适用于不需要图片的题目。
+  \item \textbf{带图片的题目环境}：使用 \texttt{problemwithfig} 环境，适用于需要附带图片的题目。可以通过可选参数调整图片底部的间距。
+\end{enumerate}
+
+\section*{示例}
+
+\begin{problems}
+  \begin{problem}
+    {
+      这是一个常规题目示例。
+    }
+  \end{problem}
+  \newpage
+  \begin{problemwithfig}[2cm] % 可选参数控制图片底部的间距
+    {
+      这是一个带图片的题目示例。
+    }
+    {\includegraphics[width=0.4\linewidth]{pooh.png}} % 替换为实际图片
+  \end{problemwithfig}
+\end{problems}
+
+\subsection*{源代码}
+
+\begin{verbatim}
+\begin{problems}
+\begin{problem}
+  {
+    这是一个常规题目示例。
+  }
+\end{problem}
+%\newpage % 为了让可爱的小熊维尼和题目在同一页上示例代码手动分页
+\begin{problemwithfig}[2cm] % 可选参数控制图片底部的间距
+  {
+    这是一个带图片的题目示例。
+  }
+  {\includegraphics[width=0.4\linewidth]{pooh.png}} % 替换为实际图片
+\end{problemwithfig}
+\end{problems}
+\end{verbatim}
+
 \end{document}

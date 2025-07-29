@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  29 JUL 2025 14:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.22)  29 JUL 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/fangyan/Documents/tutor/贝贝/20250729/20250729
-(/Users/fangyan/Documents/tutor/贝贝/20250729/20250729.tex
+**/Users/fangyan/Documents/tutor/贝贝/template/template
+(/Users/fangyan/Documents/tutor/贝贝/template/template.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/ctexart.cls (/usr/local/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
@@ -355,8 +355,8 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 )
 \c@problemsi=\count314
 \enitdp@problems=\count315
- (./20250729.aux)
-\openout1 = `20250729.aux'.
+ (./template.aux)
+\openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -470,54 +470,65 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Warning: No \author given.
 
 
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 68.
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'STFangsong'. Check the typeset output, and if it is
+(fontspec)             okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "STFangsong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'STFangsong(0)' created for font
+(fontspec)             'STFangsong' with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"STFangsong/OT:script=hani;language=dflt;"
 
 
 
 [1
 
 ]
+File: figures/pooh.png Graphic file (type bmp)
+<figures/pooh.png>
 
-[2]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
-[3]
-
-[4]
-Overfull \hbox (17.36536pt too wide) in paragraph at lines 145--146
-[]\TU/STSong(0)/m/n/10.53937 若 $\OML/cmm/m/it/10.53937 a[] \OMS/cmsy/m/n/10.53937 ^^U \OT1/cmr/m/n/10.53937 0\OML/cmm/m/it/10.53937 ; i \OT1/cmr/m/n/10.53937 = 1\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 2\OML/cmm/m/it/10.53937 ; [] ; n$\TU/lmr/m/n/10.53937 , \TU/STSong(0)/m/n/10.53937 计 $\OML/cmm/m/it/10.53937 H[] \OT1/cmr/m/n/10.53937 = []$\TU/lmr/m/n/10.53937 , $\OML/cmm/m/it/10.53937 G[] \OT1/cmr/m/n/10.53937 = []$\TU/lmr/m/n/10.53937 , $\OML/cmm/m/it/10.53937 A[] \OT1/cmr/m/n/10.53937 = []$\TU/STSong(0)/m/n/10.53937 ，|
  []
 
 
 
-[5]
-
-[6]
-
-[7]
-
-[8]
-
-[9]
-
-[10] (./20250729.aux)
+[2] (./template.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.41063pt have occurred.
-
  ) 
 Here is how much of TeX's memory you used:
- 9286 strings out of 473832
- 244940 string characters out of 5729481
- 654173 words of memory out of 5000000
- 32209 multiletter control sequences out of 15000+600000
- 565739 words of font info for 88 fonts, out of 8000000 for 9000
+ 9303 strings out of 473832
+ 245298 string characters out of 5729481
+ 644156 words of memory out of 5000000
+ 32220 multiletter control sequences out of 15000+600000
+ 564153 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,8n,114p,609b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,6n,114p,609b,481s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 20250729.pdf (10 pages).
+Output written on template.pdf (2 pages).
