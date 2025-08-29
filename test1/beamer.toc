@@ -1,3 +1,6 @@
 \beamer@sectionintoc {1}{弦振动方程}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{弦振动方程的导出}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{弦振动方程的定解问题}{7}{0}{1}
+\beamer@sectionintoc {2}{热传导方程}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{热传导方程的导出}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{热传导方程的定解问题}{15}{0}{2}
