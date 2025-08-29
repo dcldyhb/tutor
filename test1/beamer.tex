@@ -1,0 +1,191 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+	\usetheme{Madrid}
+	\usecolortheme{rose}
+	
+	%\setbeamertemplate{footline}
+	%若要删除所有幻灯片中的页脚，请取消注释此行
+	
+	%\setbeamertemplate{footline}[页码]
+	%若要用简单的幻灯片计数替换所有幻灯片中的页脚，请取消注释此行
+	
+	%\setbeamertemplate{navigation symbols}{}
+	%要删除所有幻灯片底部的导航符号，请取消注释此行
+}
+
+\setbeamertemplate{frametitle continuation}{} % 删除自动续页编号
+
+\usepackage{graphicx} % 允许包含图像
+\usepackage{booktabs} % 允许在表中使用\toprule、\ midrule和\ bottomrule
+\usepackage[UTF8,noindent]{ctexcap}  % 使用中文输入及显示
+\usepackage[bookmarks=true]{hyperref} % 允许使用超链接
+\everymath{\displaystyle} % 使所有数学公式显示为行间公式
+
+%-----------------------------------
+%	以下为正文
+%-----------------------------------
+
+\title[第一章]{第一章：弦振动方程、热传导方程、拉普拉斯方程的导出} 
+
+\author{方言} % Your name
+\institute[SJTU] % 您的机构将出现在每张幻灯片的底部，可能是节省空间的简写
+{
+	上海交通大学 \\ % 你所在的机构
+	\medskip
+	\textit{fangyan\_pj@sjtu.edu.cn} % Your email address
+}
+\date{\today} % 日期，可以更改为自定义日期
+
+\begin{document}
+
+\begin{frame}[allowframebreaks]
+	\titlepage % 将标题页打印为第一张幻灯片
+\end{frame}
+
+\begin{frame}[allowframebreaks]%目录页
+	\frametitle{Overview} % 目录幻灯片，注释此块以将其删除
+	\tableofcontents
+\end{frame}
+
+%-----------------------------------
+%	开始创建PPT
+%-----------------------------------
+
+\section{弦振动方程} % 可以创建章节，以便将您的演讲组织成离散的块，所有章节和小节都会自动打印在目录中，作为演讲的概述
+\subsection{弦振动方程的导出} % 可以在一组具有共同主题的幻灯片之前创建一个小节，以进一步将您的演示分解为块
+
+\begin{frame}[allowframebreaks]
+	\frametitle{弦振动方程}
+	一条弦固定在区间 $[0,L]$ 上，密度为 $\rho$，在平衡处附近做微小的振动，记 $u(t,x)$ 为弦在时刻 $t$ 处于位置 $x$ 的位移，满足以下的微分方程:
+
+	\begin{equation}
+		\label{eq:wave}
+		u_{tt} -a^2u_{xx}=F(t,x), \quad 0 < x < L, \quad t > 0
+	\end{equation}
+
+	\eqref{eq:wave} 式中 $a$ 为待定的弦的波速，若 $F\equiv 0$，则称为其次方程，否则为非齐次方程。
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{弦振动方程的证明}
+	任取一段弦 $[x,x+\Delta x]$，这段弦的长度为
+
+	$$
+		\Delta s = \int_x^{x+\Delta x}\sqrt{1+\left(\frac{\partial u}{\partial x}\right)^2}\,\mathrm{d}x.
+	$$
+
+	其中 $\left\vert\frac{\partial u}{\partial x}\right\vert\ll 1$，则 $\Delta s \approx \Delta x$，则其弹力与时间无关，设为 $T(x)$。
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{弦振动方程的证明}
+	我们分别在水平方向和竖直方向上对这段弦进行受力分析:
+
+	\begin{itemize}
+		\item 水平方向上速度为 $0$，则其受力平衡
+		      $$
+			      T(x+\Delta x)\cos\theta(x+\Delta x) - T(x)\cos\theta(x) = 0,
+		      $$
+		\item 在竖直方向( $u^-$ )上进行受力分析
+		      $$
+			      \rho\Delta s \frac{\partial^2u}{\partial x^2}=T(\sin\beta - \sin\alpha) + F(t,x)\Delta s
+		      $$
+
+		      其中 $\displaystyle\lim_{\theta\to 0}\sin\theta = \lim_{\theta\to 0}\tan\theta$，再将 $\Delta s = \Delta x$ 代入上式，得到:
+
+		      $$
+			      \rho\Delta x \frac{\partial^2u}{\partial t^2}=T(\frac{\partial u}{\partial x}(x+\Delta x) - \frac{\partial u}{\partial x}(x)) + F(t,x)\Delta x
+		      $$
+
+		      \newpage
+
+		      再令 $\Delta x \to 0$，得到:
+
+		      $$
+			      \rho \frac{\partial^2u}{\partial t^2} = T\frac{\partial^2u}{\partial x^2} + F(t,x)
+		      $$
+
+		      我们令 $a^2 = \frac{T}{\rho},F(t,x)=\frac{f(t,x)}{\rho}$，则得到弦振动方程:
+
+		      $$
+			      u_{tt} -a^2u_{xx}=F(t,x), \quad 0 < x < L, \quad t > 0
+		      $$
+	\end{itemize}
+\end{frame}
+
+%-----------------------------------
+
+\subsection{弦振动方程的定解问题}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{初值条件}
+	当一条弦足够长并且需要研究远离两端的点的振动情况时，可以假设弦无限长。
+
+	\begin{equation}
+		\label{eq:wave_ivp}
+		\left\{
+		\begin{aligned}
+			 & u_{tt}-a^2u_{xx}=F(t,x), \\
+			 & u(0,x)=\varphi(x),       \\
+			 & u_t(0,x)=\psi(x).
+		\end{aligned}
+		\right.
+	\end{equation}
+
+	\eqref{eq:wave_ivp} 式的三个条件分别表示了方程本身、初始位移和初始速度。\newline
+
+	这个问题被称为弦振动方程的\textbf{初值问题}或者\textbf{Cauchy 问题}。
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+	\frametitle{边界条件}
+	当我们要考虑的弦在一个有限的区间 $I=[0,L]$ 上的振动情况时，需要给出边界条件，即弦在端点处的条件。\newline
+
+	我们以一个端点 $x=a$ 为例，常见的边界条件有以下三种：
+
+	\begin{enumerate}
+		\item Dirichlet 边界条件：
+
+		      $$
+			      u(t,a)=\varphi(t),\forall t> 0
+		      $$
+		\item Neumann 边界条件：
+
+		      $$
+			      u_x(t,a)=\mu(t),\forall t> 0
+		      $$
+
+		      这表示了端点处的力。\newline
+
+		      特别的，当 $\mu(t)= 0$ 时，表示端点处没有力的作用，称为自由条件。
+
+		\item Robin 边界条件：
+
+		      $$
+			      \begin{aligned}
+				                  & T\frac{\partial u}{\partial x}(t,a)-ku(t,a)=0                \\
+				      \Rightarrow & \left(\frac{\partial u}{\partial x}-\sigma u\right)|_{x=a}=0
+			      \end{aligned}
+		      $$
+
+		      其中 $\sigma = \frac{k}{T}$ 表示弦的一端与一线性弹簧连接。\newline
+
+		      若弹簧为非线性的，则有：
+
+		      $$
+			      \left(\frac{\partial u}{\partial x}-\sigma (u)\right)|_{x=a}=0
+		      $$
+	\end{enumerate}
+\end{frame}
+
+%-----------------------------------
+
+\section{热传导方程}
+
+\subsection{热传导方程的导出}
+
+
+\end{document}
